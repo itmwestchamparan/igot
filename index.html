@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iGOT KARMYOGI Registration Status (West Champaran)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f4f6f9;
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+            padding-bottom: 60px;
+        }
+        /* Colorful Header Styling */
+        h1 {
+            font-size: 60px;
+            font-weight: 700;
+            text-align: center;
+            margin-top: 30px;
+            background: linear-gradient(45deg, #ff6347, #ff4500, #ff1493, #8a2be2, #00bfff);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            padding: 10px;
+            text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+            animation: rainbow 4s linear infinite;
+        }
+
+        @keyframes rainbow {
+            0% { background-position: 0 0; }
+            100% { background-position: 400% 0; }
+        }
+
+        .form-container {
+            max-width: 750px;
+            margin: 40px auto;
+            background-color: #ffffff;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            background: linear-gradient(135deg, #f5f7fa, #e9ecef);
+        }
+        .form-container h2 {
+            color: #ff6347;
+            font-size: 28px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-label {
+            font-size: 16px;
+            font-weight: 600;
+            color: #495057;
+        }
+        .form-control {
+            border-radius: 8px;
+            border: 1px solid #ced4da;
+            transition: all 0.3s ease;
+            padding: 10px 15px;
+        }
+        .form-control:focus {
+            border-color: #ff6347;
+            box-shadow: 0 0 5px rgba(255, 99, 71, 0.5);
+        }
+        .form-select {
+            border-radius: 8px;
+            padding: 10px 15px;
+            background-color: #f8f9fa;
+        }
+        .form-select:focus {
+            border-color: #ff6347;
+        }
+        .remarks-textarea {
+            border-radius: 8px;
+            padding: 10px 15px;
+        }
+        .remarks-textarea:focus {
+            border-color: #ff6347;
+            box-shadow: 0 0 5px rgba(255, 99, 71, 0.5);
+        }
+        .btn-primary {
+            background-color: #ff6347;
+            border-color: #ff6347;
+            font-weight: 600;
+            padding: 12px 20px;
+            width: 100%;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .btn-primary:hover {
+            background-color: #e53d34;
+            border-color: #e53d34;
+            transform: scale(1.05);
+        }
+        .btn:focus {
+            box-shadow: none;
+        }
+        .form-container .mb-3 {
+            margin-bottom: 15px;
+        }
+        .report-link {
+            font-size: 18px;
+            font-weight: 600;
+            color: #007bff;
+            display: block;
+            text-align: center;
+            margin-bottom: 20px;
+            text-decoration: none;
+        }
+        .report-link:hover {
+            text-decoration: underline;
+            color: #0056b3;
+        }
+        .footer {
+            background-color: #343a40;
+            color: #ffffff;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vS6HoHp4eDkF4V6YxDViH7BcJkxqYeiOjTpYzJUdYS2ZVSMk5_kqfSWruDIIW2Zo-KCqOn6pL7gMLWH/pubhtml?gid=0&single=true" class="report-link" target="_blank">Click here to see your report</a>
+
+        <h1>iGOT KARMYOGI Registration Status</h1>
+        <h2>West Champaran</h2>
+
+        <form id="sheetdb-form" action="https://sheetdb.io/api/v1/auj4gu260ryg6" method="POST">
+            <div class="mb-3">
+                <label for="block" class="form-label">Select Block Name</label>
+                <select id="block" name="data[block]" class="form-select" required>
+                    <option value="">Select Office</option>
+                    <option value="Subdivision Bagaha">Subdivision Bagaha</option>
+                    <option value="Subdivision Bettiah">Subdivision Bettiah</option>
+                    <option value="Subdivision Narkatiyaganj">Subdivision Narkatiyaganj</option>
+                    <option value="Bagaha-1">Bagaha-1</option>
+                    <option value="Bagaha-2">Bagaha-2</option>
+                    <option value="Bairia">Bairia</option>
+                    <option value="Bettiah">Bettiah</option>
+                    <option value="Bhitaha">Bhitaha</option>
+                    <option value="Chanpatia">Chanpatia</option>
+                    <option value="Gaunaha">Gaunaha</option>
+                    <option value="Jogapatti">Jogapatti</option>
+                    <option value="Lauriya">Lauriya</option>
+                    <option value="Madhubani">Madhubani</option>
+                    <option value="Mainatanr">Mainatanr</option>
+                    <option value="Majhaulia">Majhaulia</option>
+                    <option value="Narkatiaganj">Narkatiaganj</option>
+                    <option value="Nautan">Nautan</option>
+                    <option value="Piprasi">Piprasi</option>
+                    <option value="Ramnagar">Ramnagar</option>
+                    <option value="Sikta">Sikta</option>
+                    <option value="Thakrahan">Thakrahan</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="date" class="form-label">Date of Reporting</label>
+                <input type="date" id="date" name="data[date]" class="form-control" value="<?php echo date('Y-m-d'); ?>" required min="<?php echo date('Y-m-d'); ?>" max="<?php echo date('Y-m-d'); ?>">
+            </div>
+
+            <div class="mb-3">
+                <label for="regular_employees" class="form-label">Total Number of Regular Employees</label>
+                <input type="number" id="regular_employees" name="data[regular_employees]" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="gov_email_employees" class="form-label">Total Number of Employees Having (.gov/.nic) Email</label>
+                <input type="number" id="gov_email_employees" name="data[gov_email_employees]" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="igot_registered_employees" class="form-label">Total Number of Employees Registered on iGOT</label>
+                <input type="number" id="igot_registered_employees" name="data[igot_registered_employees]" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="igot_enrolled_courses" class="form-label">Total Number of Employees Enrolled in Courses on iGOT</label>
+                <input type="number" id="igot_enrolled_courses" name="data[igot_enrolled_courses]" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="remarks" class="form-label">Remarks</label>
+                <textarea id="remarks" name="data[remarks]" class="form-control remarks-textarea" rows="3"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <div class="footer">
+        <p>Powered by RTPS CELL WEST CHAMPARAN</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        var form = document.getElementById("sheetdb-form");
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            fetch(form.action, {
+                method: "POST",
+                body: new FormData(
+                    document.getElementById("sheetdb-form")
+                ),
+            })
+                .then((response) => response.json())
+                .then((html) => {
+                    window.location.href = "submission_success.html?status=success"; // Redirect to success page with query parameter
+                });
+        });
+    </script>
+</body>
+</html>
