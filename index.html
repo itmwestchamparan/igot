@@ -7,15 +7,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
+        /* General Body Styling */
         body {
             background-color: #f4f6f9;
             font-family: 'Poppins', sans-serif;
             color: #333;
-            padding-bottom: 60px;
             margin: 0;
+            padding-bottom: 60px;
+            overflow-x: hidden;
         }
 
-        /* Beautiful Header Styling with New Gradient */
+        /* Beautiful Header with Dynamic Effects */
         h1 {
             font-size: 50px;
             font-weight: 700;
@@ -29,7 +31,14 @@
             letter-spacing: 3px;
             padding: 10px;
             text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
-            animation: rainbow 4s linear infinite;
+            animation: rainbow 5s linear infinite;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        h1:hover {
+            transform: scale(1.1);
+            text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
         }
 
         @keyframes rainbow {
@@ -45,6 +54,12 @@
             padding: 25px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             background: linear-gradient(135deg, #f5f7fa, #e9ecef);
+            animation: fadeIn 1s ease-out;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
         }
 
         .form-container h2 {
@@ -65,8 +80,8 @@
         .form-control, .form-select, .remarks-textarea {
             border-radius: 8px;
             border: 1px solid #ced4da;
-            transition: all 0.3s ease;
             padding: 10px 15px;
+            transition: all 0.3s ease;
             width: 100%;
         }
 
@@ -89,6 +104,7 @@
             background-color: #e53d34;
             border-color: #e53d34;
             transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(255, 99, 71, 0.3);
         }
 
         .declaration {
@@ -128,6 +144,7 @@
             position: fixed;
             width: 100%;
             bottom: 0;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
         }
 
         .footer p {
@@ -140,7 +157,6 @@
             h1 {
                 font-size: 40px;
                 padding: 5px;
-                text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
             }
 
             .form-container {
@@ -264,12 +280,11 @@
             e.preventDefault();
             fetch(form.action, {
                 method: "POST",
-                body: new FormData(
-                    document.getElementById("sheetdb-form")
-                ),
+                body: new FormData(document.getElementById("sheetdb-form"))
             })
                 .then((response) => response.json())
                 .then((html) => {
+                    alert("Form submitted successfully!");
                     window.location.href = "submission_success.html?status=success"; // Redirect to success page with query parameter
                 });
         });
